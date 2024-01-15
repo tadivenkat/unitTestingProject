@@ -1,6 +1,7 @@
 package com.venkat.unitTestingProject.utils;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.math.BigInteger;
 
@@ -23,5 +24,11 @@ public class UtilsTest {
     void getFactorial_factorialOf0Is1Test() {
         BigInteger result = Utils.getFactorial(0L);
         assertEquals(BigInteger.valueOf(1L), result);       
+    }
+
+    @Test
+    void getFactorial_factorialOfNegativeNumberIs1Test() {
+        BigInteger result = Utils.getFactorial(-2L);
+        assertTrue(1L == result.longValue());
     }
 }
