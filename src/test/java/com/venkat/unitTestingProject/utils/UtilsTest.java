@@ -15,14 +15,10 @@ import org.junit.jupiter.api.Test;
 public class UtilsTest {
 
     @BeforeAll
-    static void init() {
-        System.out.println("Initializtion");
-    }
+    static void init() {}
 
     @BeforeEach
-    void setup() {
-        System.out.println("Setup something before each test");
-    }
+    void setup() {}
 
     @Test
     void getFactorial_simpleTest() {
@@ -85,12 +81,8 @@ public class UtilsTest {
     }
 
     @AfterEach
-    void teardown() {
-        System.out.println("Cleanup something after each test");
-    }
+    void teardown() {}
 
     @AfterAll
-    static void cleanupAfterAllTests() {
-        System.out.println("Cleanup called after execution of all the tests");
-    }
+    static void cleanupAfterAllTests() {}
 }
