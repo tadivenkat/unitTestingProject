@@ -21,25 +21,25 @@ public class UtilsTest {
     void setup() {}
 
     @Test
-    void getFactorial_simpleTest() {
+    void getFactorial_simple() {
         BigInteger result = Utils.getFactorial(5L);
         assertEquals(BigInteger.valueOf(120L), result);
     }
 
     @Test
-    void getFactorial_factorialOf1Is1Test() {
+    void getFactorial_factorialOf1Is1() {
         BigInteger result = Utils.getFactorial(1L);
         assertEquals(BigInteger.valueOf(1L), result);
     }
 
     @Test
-    void getFactorial_factorialOf0Is1Test() {
+    void getFactorial_factorialOf0Is1() {
         BigInteger result = Utils.getFactorial(0L);
         assertEquals(BigInteger.valueOf(1L), result);       
     }
 
     @Test
-    void getFactorial_factorialOfNegativeNumberIs1Test() {
+    void getFactorial_factorialOfNegativeNumberIs1() {
         BigInteger result = Utils.getFactorial(-2L);
         assertTrue(1L == result.longValue());
     }
