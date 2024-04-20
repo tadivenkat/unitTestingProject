@@ -1,5 +1,5 @@
 Implement the concepts of Unit testing in Java
 
-# mvn test
+# >mvn test
 
-# mvn clean install
+# >mvn clean install
